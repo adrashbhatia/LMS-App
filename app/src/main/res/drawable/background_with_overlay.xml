@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Color Overlay (Black with transparency) -->
+    <item>
+        <shape>
+            <solid android:color="#FF000000" />
+        </shape>
+    </item>
+
+    <!-- Background Image (Bitmap) -->
+    <item>
+        <bitmap
+            android:src="@drawable/back111"
+            android:gravity="right"
+            android:tileMode="disabled"
+            android:scaleType="fitEnd" />
+    </item>
+
+    <!-- Curved White Shape at the Bottom with Top Margin (Inset) -->
+    <item
+        android:gravity="bottom"
+        android:bottom="0dp"
+        android:top="250dp"> <!-- Adjust this top value to create the margin -->
+        <shape xmlns:android="http://schemas.android.com/apk/res/android">
+            <corners
+                android:topLeftRadius="30dp"
+                android:topRightRadius="30dp"
+                android:bottomLeftRadius="0dp"
+                android:bottomRightRadius="0dp" />
+            <solid android:color="@android:color/white" />
+        </shape>
+    </item>
+
+</layer-list>

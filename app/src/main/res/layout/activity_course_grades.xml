@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F4F9"
+    android:padding="16dp">
+
+    <!-- Course Title TextView -->
+    <TextView
+        android:id="@+id/courseTitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="26sp"
+        android:textColor="#11294b"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_slab_bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="16dp"
+        android:layout_centerHorizontal="true"
+        android:text="Course Title"/>
+
+    <!-- Grades RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gradesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/courseTitleTextView"
+        android:layout_marginTop="24dp"
+        android:scrollbars="vertical"
+        tools:listitem="@layout/item_grade"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:padding="8dp"
+        android:clipToPadding="false"/>
+</RelativeLayout>

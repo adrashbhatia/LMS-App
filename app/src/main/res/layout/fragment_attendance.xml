@@ -1,0 +1,48 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AttendanceFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/selectCourseTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Your Course"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"/>
+
+        <!-- Custom TextView acting as a dropdown -->
+        <TextView
+            android:id="@+id/courseDropdownAttendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/selectCourseTitle"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:background="@drawable/spinner_background"
+            android:text="Choose Course"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical|start"
+            android:drawableEnd="@drawable/ic_arrow_down"
+            android:drawablePadding="10dp"/>
+
+        <!-- Button to view combined attendance for all courses -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_view_combined_attendance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/courseDropdownAttendance"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/greenbuttongradieant"
+            android:text="View Combined Attendance" />
+    </RelativeLayout>
+</FrameLayout>

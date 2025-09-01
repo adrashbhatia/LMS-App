@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin_login_screen">
+
+    <!-- Main Background Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cropbackground"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <!-- Logo -->
+
+        <!-- Welcome Text -->
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="117dp"
+            android:layout_marginTop="100dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/splash" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/a"
+            android:text="Welcome To Admin login page"
+            android:textAlignment="center"
+            android:textColor="#11294B"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <!-- Email Field -->
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="327dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/mail"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <!-- Password Field -->
+        <!-- Password Field -->
+        <EditText
+            android:id="@+id/editTextTextPassword"
+            android:layout_width="327dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/edittext"
+            android:drawableStart="@drawable/lock"
+            android:drawableEnd="@drawable/ic_eye_closed"
+            android:drawablePadding="15dp"
+            android:elevation="5dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+        <!-- Forgot Password and Remember Me Section -->
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="320dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="@+id/editTextTextPassword"
+            app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+            app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/a"
+                android:shadowColor="#11294B"
+                android:text="Remember me"
+                android:textColor="#11294B" />
+
+            <!-- Forgot Password Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Forgot11"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="8dp"
+                android:background="#00FFFFFF"
+                android:textStyle="bold"
+                android:fontFamily="@font/a"
+                android:gravity="center"
+                android:text="Forgot Password"
+                android:textColor="#11294B"
+                />
+
+        </RelativeLayout>
+
+        <!-- Login Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/login3"
+            android:layout_width="150dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/orangebutton"
+            android:fontFamily="@font/lato_bold"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/relativeLayout"
+            app:layout_constraintStart_toStartOf="@+id/relativeLayout"
+            app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

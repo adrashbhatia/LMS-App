@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="detailed">
+
+    <!-- CardView with Course Image and Title -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/cardimage"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="8dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/detailedimage"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/baseline_menu_book_24"
+            tools:ignore="VisualLintBounds" />
+
+        <TextView
+            android:id="@+id/detailedName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/title"
+            android:gravity="center"
+            android:text="Course Name"
+            android:textColor="#d97c29"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SpUsage,VisualLintBounds" />
+
+        <!-- Gradient Progress Line -->
+        <ProgressBar
+            android:id="@+id/courseCompletionProgress"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp"
+            android:progressDrawable="@drawable/progress_gradient"
+            android:max="100"
+            android:indeterminateOnly="false"
+            android:progress="0"/>
+    </androidx.cardview.widget.CardView>
+
+    <!-- Class Details Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Details:"
+        android:textColor="#11294B"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Class duration\nClass timing\nClass venue"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/detailCourseDuration"
+        tools:ignore="HardcodedText" />
+
+    <!-- Course Description Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Description:"
+        android:textColor="#11294B"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="This course covers basic to advanced Java programming concepts including OOP, data structures, algorithms, and more."
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/detailCourseDescription"
+        tools:ignore="HardcodedText" />
+
+    <!-- Course Content Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course Content:"
+        android:textColor="#11294B"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. Introduction to Java\n2. Object-Oriented Programming\n3. Data Structures\n4. Algorithms"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:id="@+id/detailCourseContent"
+        tools:ignore="HardcodedText" />
+
+    <!-- Buttons at the Bottom -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:ignore="InefficientWeight">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="9dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="16dp"
+            tools:ignore="RtlHardcoded,UselessParent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Attendance"
+                android:layout_width="170dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/greenbuttongradieant"
+                android:fontFamily="@font/lato_bold"
+                android:text="View Attendance"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Assessment"
+                android:layout_width="170dp"
+                android:layout_height="57dp"
+                android:layout_marginEnd="2dp"
+                android:background="@drawable/greenbuttongradieant"
+                android:fontFamily="@font/lato_bold"
+                android:text="Assessment Progress"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+    <!-- Fragment Container -->
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

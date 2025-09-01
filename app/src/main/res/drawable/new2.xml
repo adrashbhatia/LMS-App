@@ -1,0 +1,19 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Gradient background -->
+    <item>
+        <shape android:shape="rectangle">
+            <gradient
+                android:startColor="#000000"
+            android:endColor="#FFFFFF"
+            android:angle="270"/>
+        </shape>
+    </item>
+    <!-- Design element (Example: Circle) -->
+    <item>
+        <shape android:shape="oval">
+            <size android:width="200dp" android:height="200dp" /> <!-- Size of the circle -->
+            <solid android:color="#000000"/> <!-- Circle color -->
+            <padding android:left="50dp" android:right="50dp" android:top="50dp" android:bottom="50dp" /> <!-- Padding around the circle -->
+        </shape>
+    </item>
+</layer-list>

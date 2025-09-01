@@ -1,0 +1,42 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/notificationTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/notificationMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:layout_below="@id/notificationTitle"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/notificationTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:layout_below="@id/notificationMessage"
+        android:textSize="12sp"
+        android:textColor="#888888" />
+
+    <!-- Unread badge -->
+    <View
+        android:id="@+id/unreadBadge"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:background="@drawable/unread_badge"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp" />
+</RelativeLayout>

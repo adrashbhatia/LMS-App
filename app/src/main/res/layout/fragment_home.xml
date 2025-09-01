@@ -1,0 +1,169 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/announcements_scrollview"
+    tools:context=".HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whitebutton"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dashboard"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Important Notices -->
+        <TextView
+            android:id="@+id/important_notices_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Important Notices"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/important_notices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginBottom="24dp">
+
+            <!-- Notice Item -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/notice_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/notice_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/notice_date"
+                    android:textStyle="bold"
+                    android:text="Notice Description"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+            <!-- Add more Notice Items as needed -->
+
+        </LinearLayout>
+
+        <!-- Announcements -->
+        <TextView
+            android:id="@+id/announcements_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Announcements"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/announcements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginBottom="24dp">
+
+            <!-- Announcement Item -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/announcement_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Announcement Text"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <!-- Recent Activity -->
+        <TextView
+            android:id="@+id/recent_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recent Activity"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginBottom="12dp"/>
+
+        <LinearLayout
+            android:id="@+id/recent_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/rounded_corners"
+            android:layout_marginBottom="24dp">
+
+            <!-- Activity Item -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/activity_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"/>
+
+                <TextView
+                    android:id="@+id/activity_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_below="@id/activity_date"
+                    android:text="Activity Description"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

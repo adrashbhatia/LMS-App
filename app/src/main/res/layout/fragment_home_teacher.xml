@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Announcements section -->
+    <TextView
+        android:id="@+id/announcementTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Announcements: No new announcements"
+        android:textSize="18sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:padding="12dp"
+        android:background="#EFEFEF"
+        android:visibility="visible"
+        android:layout_marginBottom="8dp"/>
+
+
+
+    <!-- RecyclerView for announcements -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/announcementsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Divider between announcements and class updates -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Empty state text view -->
+    <TextView
+        android:id="@+id/emptyStateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No updates available"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+
+    <!-- RecyclerView for class updates -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classUpdatesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp" />
+
+    <!-- Class update input and post button in a horizontal container -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <EditText
+            android:id="@+id/classUpdateInput"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Enter class update"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:textSize="16sp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/postUpdateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Post Update"
+            android:background="@drawable/greenbuttongradieant"
+            android:layout_marginStart="8dp"
+            android:paddingHorizontal="16dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

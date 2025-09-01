@@ -1,0 +1,59 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#F4F4F9">
+
+    <!-- Notification Title -->
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#333333"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="8dp" />
+
+    <!-- Divider Line -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#DDDDDD"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Notification Message -->
+    <TextView
+        android:id="@+id/detailMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textSize="16sp"
+        android:textColor="#555555"
+        android:lineSpacingExtra="4dp"
+        android:paddingBottom="16dp" />
+
+    <!-- Timestamp -->
+    <TextView
+        android:id="@+id/detailTimestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Timestamp"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Button to Dismiss -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/dismissButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dismiss"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/greenbuttongradieant"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp" />
+</LinearLayout>

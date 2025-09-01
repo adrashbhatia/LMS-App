@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".attendance_teacher">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/attendanceTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Course for Attendance"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Spinner for Course Selection -->
+    <Spinner
+        android:id="@+id/courseSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/attendanceTitle"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Date Label -->
+    <TextView
+        android:id="@+id/dateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@id/courseSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Date Input -->
+    <EditText
+        android:id="@+id/dateInput"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:clickable="true"
+        android:focusable="false"
+        android:hint="Select Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dateLabel"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <!-- Button to Mark Attendance -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/markAttendanceButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="Mark Attendance"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/dateInput"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/greenbuttongradieant"/>
+
+    <!-- Button to View Attendance Report -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/viewReportButton"
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:text="View Attendance Report"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/markAttendanceButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/greenbuttongradieant"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

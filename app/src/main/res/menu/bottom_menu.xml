@@ -1,0 +1,31 @@
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/Home1"
+        android:title="Home"
+        android:icon="@drawable/baseline_home_24"/>
+
+    <item
+        android:id="@+id/Courses2"
+        android:title="Courses"
+        android:icon="@drawable/baseline_subject_24"
+        />
+    <item
+        android:id="@+id/add_button"
+        android:title=""
+        android:icon="@drawable/baseline_keyboard_double_arrow_up_24"/>
+
+
+    <item
+        android:id="@+id/Notifications3"
+        android:title="Notifications"
+        android:icon="@drawable/baseline_notifications_24" />
+
+    <item
+        android:id="@+id/Queries"
+        android:title="Queries"
+        android:icon="@drawable/baseline_quiz_24" />
+
+</menu>

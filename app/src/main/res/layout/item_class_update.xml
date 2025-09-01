@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <!-- Class update text -->
+    <TextView
+        android:id="@+id/classUpdateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sample class update"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:layout_marginBottom="4dp" />
+
+    <!-- Edit and Delete buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:background="@drawable/greenbuttongradieant"
+            android:text="Edit"
+            android:textColor="@android:color/white"
+            android:textSize="14sp"
+            android:visibility="gone"
+        />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:text="Delete"
+            android:textSize="14sp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/greenbuttongradieant"
+            android:textColor="@android:color/white"
+            android:visibility="gone"
+        />
+
+    </LinearLayout>
+</LinearLayout>

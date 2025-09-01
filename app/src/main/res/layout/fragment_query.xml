@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:ignore="ExtraText">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp"
+        android:backgroundTint="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/baseline_help_outline_24"
+                    android:layout_marginEnd="8dp"
+                    app:tint="@color/blue" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Your Query"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/blue" />
+            </LinearLayout>
+
+            <!-- Scrollable Message Box for Query -->
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="185dp"
+                android:layout_marginTop="16dp"
+                android:fillViewport="true">
+
+                <EditText
+                    android:id="@+id/editTextQuery"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:background="@drawable/whitebutton"
+                    android:gravity="top"
+                    android:hint="Enter your query"
+                    android:inputType="textMultiLine"
+                    android:lineSpacingExtra="4dp"
+                    android:padding="12dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+            </ScrollView>
+
+            <!-- Attachment Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="16dp"
+                android:gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Attach a file:"
+                    android:textSize="16sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginEnd="8dp" />
+
+                <ImageView
+                    android:id="@+id/attachmentIcon"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:src="@drawable/baseline_attach_file_24"
+                    android:contentDescription="Attach File"
+                    app:tint="@color/blue" />
+
+                <TextView
+                    android:id="@+id/attachedFileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No file selected"
+                    android:textSize="14sp"
+                    android:textColor="@color/blue"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Submit Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmitQuery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:background="@drawable/greenbuttongradieant"
+                android:layout_gravity="center"
+                android:layout_marginTop="24dp"
+                android:paddingHorizontal="24dp"
+                android:paddingVertical="12dp"
+                android:elevation="4dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

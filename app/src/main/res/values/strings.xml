@@ -1,0 +1,95 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">XGENLMS</string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="we_will_send_you_an_one_time_password">We will send you a One Time Password</string>
+    <string name="enter_the_otp_sent_to">Enter the OTP sent to</string>
+    <string name="didn_t_receive_the_otp">Didn\'t receive the OTP?</string>
+    <string name="resend_otp">RESEND OTP</string>
+    <string name="verify">VERIFY</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login_teacher_underlined"><u>Login as Teacher</u></string>
+
+    <string name="login_admin_underlined"><u>Login as Admin</u></string>
+
+
+    <!-- Course 1 -->
+    <string name="course1Title">Course Title 1</string>
+    <string name="course1Description">Detailed description of Course 1.</string>
+
+    <!-- Course 2 -->
+    <string name="course2Title">Course Title 2</string>
+    <string name="course2Description">Detailed description of Course 2.</string>
+
+    <!-- Course 3 -->
+    <string name="course3Title">Course Title 3</string>
+    <string name="course3Description">Detailed description of Course 3.</string>
+
+    <!-- Course 4 -->
+    <string name="course4Title">Course Title 4</string>
+    <string name="course4Description">Detailed description of Course 4.</string>
+
+    <!-- Course 5 -->
+    <string name="course5Title">Course Title 5</string>
+    <string name="course5Description">Detailed description of Course 5.</string>
+
+    <!-- Course 6 -->
+    <string name="course6Title">Course Title 6</string>
+    <string name="course6Description">Detailed description of Course 6.</string>
+
+    <!-- Course 7 -->
+    <string name="course7Title">Course Title 7</string>
+    <string name="course7Description">Detailed description of Course 7.</string>
+
+    <!-- Course 8 -->
+    <string name="course8Title">Course Title 8</string>
+    <string name="course8Description">Detailed description of Course 8.</string>
+
+    <!-- Course 9 -->
+    <string name="course9Title">Course Title 9</string>
+    <string name="course9Description">Detailed description of Course 9.</string>
+
+    <!-- Course 10 -->
+    <string name="course10Title">Course Title 10</string>
+    <string name="course10Description">Detailed description of Course 10.</string>
+    <string name="course_name">Course Name</string>
+    <string name="behavior_fab_bottom_appbar">\n</string>
+    <string name="add_button_description" />
+    <string name="profile_picture" />
+    <string name="profile" />
+    <string name="notifications">\n</string>
+    <string name="courses">\n</string>
+    <string name="announcement_image" />
+    <string name="student_support" />
+    <string name="faqs" />
+    <string name="upcoming_webinars" />
+    <string name="course_image_description">\n</string>
+    <string name="material_icon_desc">\n</string>
+
+    <string name="navigation_drawer_open">Open Navigation</string>
+    <string name="navigation_drawer_close">Close Navigation</string>
+    <string name="course_icon">\n</string>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

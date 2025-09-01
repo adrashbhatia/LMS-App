@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.XGENLMS" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <!-- Define additional styles -->
+    <style name="Theme.NavigationDrawer" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="android:windowAnimationStyle">@style/YourAnimationStyle</item>
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_in</item>
+        <item name="android:windowExitAnimation">@anim/slide_out</item>
+    </style>
+
+    <style name="Theme.XGENLMS" parent="Base.Theme.XGENLMS">
+        <!-- Customize your theme here if needed. -->
+    </style>
+
+    <style name="YourAnimationStyle">YourAnimationStyle</style>
+    
+    <style name="roundedImageViewRound">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+
+
+
+    </style>
+
+
+
+</resources>

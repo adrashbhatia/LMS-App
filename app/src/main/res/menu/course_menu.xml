@@ -1,0 +1,8 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Define menu items here -->
+    <item android:id="@+id/course_1" android:title="Course 1" />
+    <item android:id="@+id/course_2" android:title="Course 2" />
+    <item android:id="@+id/course_3" android:title="Course 3" />
+    <item android:id="@+id/course_4" android:title="Course 4" />
+    <item android:id="@+id/course_5" android:title="Course 5" />
+</menu>
