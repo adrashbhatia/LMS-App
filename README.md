@@ -46,20 +46,6 @@ Clone the repository
 git clone https://github.com/your-repo/xlms.git
 cd xlms
 
-
-Install backend dependencies
-
-cd backend
-npm install
-
-
-Configure the database in config.js (MySQL settings)
-
-Run backend server
-
-npm start
-
-
 Open Android project in Android Studio and run on an emulator/device.
 
 📖 Usage
