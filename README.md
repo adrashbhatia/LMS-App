@@ -61,4 +61,4 @@ Admins → Manage courses, announcements, and student queries.
 XLMS is built with the aim of providing a simple, professional, and user-friendly LMS for training centers and educational institutions.
 
 
-⚠️ Note: This project is licensed under a Custom License. Unauthorized use, modification, or distribution is strictly prohibited..
+⚠️ Note: This project is licensed under a Custom License. Unauthorized use, modification, or distribution is strictly prohibited.
